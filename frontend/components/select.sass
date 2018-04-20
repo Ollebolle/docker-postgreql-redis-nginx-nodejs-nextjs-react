@@ -1,0 +1,21 @@
+@import "../styles/variables"
+@import "../styles/mixins"
+
+select
+  background: $border !important
+  border: none !important
+  color: $text !important
+  padding: 2 * $padding
+  // height: auto !important
+  font-size: 14px
+  border-radius: $border_radius !important
+  +transition(0.2s)
+
+.select::after
+  border-color: $accent !important
+  border-width: 2px !important
+  // &:focus
+  //   box-shadow: $shadow_smaller !important
+  // &:hover
+  //   background: $button_bg_hover !important
+

@@ -1,0 +1,33 @@
+@import "~bulma"
+@import "~bulma/sass/grid/_all"
+@import "font"
+@import "mixins"
+@import "variables"
+@import "text"
+@import "../layout/navbar/navbar"
+@import "../layout/page"
+@import "../layout/page_border"
+
+*
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+
+body, html
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+
+.section
+  padding-top: 0
+
+.site-content
+  padding-top: $header_height + 2 * $padding
+
+.margin-top-0
+  margin-top: 0 !important
+
+.white-bg
+  background: #fff
+
+.shadow
+  box-shadow: $shadow

@@ -1,0 +1,30 @@
+{
+  "name": "banana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node dev_server.js",
+    "build": "next build",
+    "start": "next start -p 9999"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "0.7.0",
+    "lodash": "4.17.5",
+    "@zeit/next-sass": "^0.1.2",
+    "next": "^5.1.0",
+    "node-sass": "^4.8.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-motion": "^0.5.2",
+    "react-plx": "^1.1.2"
+  },
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "express": "^4.16.3",
+    "http-proxy-middleware": "^0.18.0"
+  }
+}

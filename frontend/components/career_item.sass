@@ -1,0 +1,15 @@
+@import "../styles/variables"
+@import "../styles/mixins"
+
+.career-item
+  max-width: $max_text_content_width
+  margin: auto
+  box-shadow: $shadow_small
+  background: $bg
+  margin-bottom: 4 * $padding !important
+  border-radius: $border_radius
+  +transition(0.2s)
+  .career-item-content
+    padding: 4 * $padding
+  &:hover
+    box-shadow: $shadow_small_hover

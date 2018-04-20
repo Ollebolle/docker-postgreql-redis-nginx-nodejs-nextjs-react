@@ -1,0 +1,17 @@
+@import "../styles/variables"
+@import "../styles/mixins"
+
+input, textarea
+  background: $border !important
+  border: none !important
+  color: $text !important
+  padding: 2 * $padding
+  // height: auto !important
+  font-size: 14px
+  border-radius: $border_radius !important
+  box-shadow: none !important
+  +transition(0.2s)
+  &:focus
+    box-shadow: $shadow_smaller !important
+  // &:hover
+  //   background: $button_bg_hover !important

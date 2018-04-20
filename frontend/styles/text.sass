@@ -1,0 +1,132 @@
+@import "./variables"
+@import "./mixins"
+
+.text-center
+  text-align: center
+
+.text-margin-top
+  margin-top: 4 * $padding
+
+.text-margin-bottom
+  margin-bottom: 4 * $padding
+
+.image-title,
+.section-title,
+.sub-title,
+.card-title,
+.italic,
+.text-content *
+  margin: 0
+  padding: 0
+  color: $text
+
+.text-bright
+  color: $text_bright
+
+.image-title,
+.section-title,
+.text-content h1
+  font-size: 36px
+  font-weight: bold
+  letter-spacing: 6px
+
+.sub-title,
+.card-title,
+.text-content h2
+  font-size: 20px
+  letter-spacing: 2px
+
+.paragraph,
+.italic,
+.text-content p
+  font-size: 14px
+
+.sub-title,
+.card-title,
+.paragraph,
+.italic,
+.small
+  &.text-margin-top
+    margin-top: 2 * $padding
+  &.text-margin-bottom
+    margin-bottom: 2 * $padding
+
+.card-title,
+.text-content h2
+  font-weight: bold
+
+
+.italic
+  font-style: italic
+  color: $text_lessimportant
+
+.small
+  font-size: 10px
+  font-weight: bold
+
+.link
+  color: $accent
+  +transition(0.2s)
+  &:hover
+    color: $text
+
+.text-content
+  max-width: $max_text_content_width
+  margin: auto
+  h1
+    margin-bottom: 4 * $padding
+  h2,
+  h3,
+  p,
+  ul,
+  ol,
+  blockquote
+    margin-bottom: 2 * $padding
+  h1,
+  h2,
+  h3
+    padding-top: 2 * $padding
+  ul,
+  ol
+    padding: 2 * $padding
+    li
+      padding: $padding / 2 0
+      list-style: bold
+  ul
+    padding-left: 2 * $padding
+    li
+      list-style-type: square
+  ol
+    padding-left: 4 * $padding
+  a
+    color: $accent
+    +transition(0.2s)
+    &:hover
+      color: $text
+  img
+    width: 100%
+    margin-bottom: 4 * $padding
+  blockquote
+    background: $border
+    padding: 2 * $padding
+    border-radius: $border_radius
+    p
+      margin: 0
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)
+  .image-title,
+  .section-title,
+  .text-content h1
+    font-size: 30px
+    letter-spacing: 2px
+
+  .sub-title,
+  .card-title,
+  .text-content h2
+    font-size: 20px
+    letter-spacing: 1px
+
+  .paragraph,
+  .italic,
+  .text-content p
+    font-size: 14px

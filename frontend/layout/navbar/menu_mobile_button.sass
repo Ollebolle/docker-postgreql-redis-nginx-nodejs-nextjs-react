@@ -1,0 +1,30 @@
+@import "../../styles/variables"
+
+$menu_button_line_height: 5px
+$menu_button_middle: $header_height / 2 - $menu_button_line_height / 2
+$menu_button_line_separation: 3px
+
+.navbar-menu-button
+  position: absolute
+  top: 0
+  right: 0
+  // display: none
+  width: $header_height
+  height: $header_height
+  span
+    position: absolute
+    left: 0
+    display: block
+    width: 40px
+    height: $menu_button_line_height
+    background: $accent
+    &:nth-of-type(1)
+      top: $menu_button_middle - $menu_button_line_height - $menu_button_line_separation
+    &:nth-of-type(2)
+      top: $menu_button_middle
+    &:nth-of-type(3)
+      top: $menu_button_middle + $menu_button_line_height + $menu_button_line_separation
+  &.active
+    span:nth-of-type(1),
+    span:nth-of-type(3)
+      top: $menu_button_middle - $menu_button_line_height / 2

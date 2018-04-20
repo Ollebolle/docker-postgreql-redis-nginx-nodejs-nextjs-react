@@ -1,0 +1,29 @@
+@import "../styles/variables"
+
+.page-section
+  background: $bg
+  padding: 8 * $padding
+  &.diff-background
+    background: $bg_secondary
+  // &.vertical-padding
+  //   padding-top: 5 * $padding
+  //   padding-bottom: 5 * $padding
+  .page-section-content
+    width: 100%
+    max-width: $max_content_width
+    margin: auto
+    .page-section-header
+      color: $text !important
+      text-align: center
+      text-transform: uppercase
+      padding-bottom: 0
+    hr
+      background: $accent
+      width: 100px
+      height: 4px
+      margin: 6 * $padding auto
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)
+  .page-section
+    padding: 4 * $padding 2 * $padding

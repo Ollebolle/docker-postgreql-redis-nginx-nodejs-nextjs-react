@@ -1,0 +1,29 @@
+@import "../styles/variables"
+@import "../styles/mixins"
+
+.news-item
+  max-width: $max_text_content_width
+  margin: auto
+  box-shadow: $shadow_small
+  background: $bg
+  margin-bottom: 4 * $padding !important
+  border-radius: $border_radius
+  // +transition(0.2s)
+  .news-image-container
+    width: 100%
+    height: 25vh
+    min-height: 100px
+    border-top-left-radius: $border_radius
+    border-top-right-radius: $border_radius
+    overflow: hidden
+    .news-image
+      width: 100%
+      height: 100%
+      background-size: cover
+      +transition(0.2s)
+  .news-item-content
+    padding: 4 * $padding
+  &:hover
+    box-shadow: $shadow_small_hover
+    .news-image
+      +transform(scale(1.05))

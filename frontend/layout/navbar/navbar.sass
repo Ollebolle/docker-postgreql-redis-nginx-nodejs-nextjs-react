@@ -1,0 +1,95 @@
+$menu_button_line_height: 5px
+$menu_button_middle: $header_height / 2 - $menu_button_line_height / 2
+$menu_button_line_separation: 3px
+
+.nav-bar
+  position: fixed !important
+  top: $page_border_weight - $padding * 2
+  left: 0
+  z-index: 10
+  width: 100%
+  height: $header_height
+  .nav-bar-content
+    width: 100%
+    max-width: $max_content_width
+    margin: auto
+    height: $header_height
+    background: $nav_bar_bg
+    box-shadow: $shadow
+    padding: $padding
+    +flexContainer
+  .nav-bar-logo
+    padding: $padding
+    height: 100%
+    +flexHold
+    img
+      height: 100%
+  .nav-bar-links
+    margin-left: auto
+    +flexContainer
+    a
+      display: block
+      line-height: $header_height - 2 * $padding
+      padding: 0 2 * $padding
+      text-transform: uppercase
+      color: $text
+      text-decoration: none
+      font-weight: bold
+      +transition(0.2s)
+      &:nth-child(1)
+        margin-left: auto
+      &:hover
+        color: $accent
+
+.demo0
+  height: 100px
+  background: $border
+.demo0-block
+  height: 100px
+  background: $accent
+  width: 50px
+
+/* Portrait and Landscape */
+// @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)
+//   .nav-bar
+//     // +flexCenter
+//     .nav-bar-link-desktop
+//       display: none !important
+//     .navbar-menu-button
+//       display: block
+//     .nav-bar-links
+//       position: absolute
+//       top: $header_height
+//       left: 0
+//       width: 100%
+//       height: auto
+//       z-index: 0
+//       +flexCenter
+//       .nav-bar-links-bg
+//         position: absolute
+//         top: 0
+//         right: 0
+//         width: 100%
+//         background: $nav_bar_bg
+//       .nav-bar-link
+//         width: 100%
+//         text-align: center
+//         text-transform: uppercase
+//         font-size: 25px
+//         height: $header_height * 1.5
+//         line-height: $header_height * 1.5
+
+
+/* Portrait */
+// @media only screen
+//   and (min-device-width: 375px)
+//   and (max-device-width: 667px)
+//   and (-webkit-min-device-pixel-ratio: 2)
+//   and (orientation: portrait)
+
+// /* Landscape */
+// @media only screen
+//   and (min-device-width: 375px)
+//   and (max-device-width: 667px)
+//   and (-webkit-min-device-pixel-ratio: 2)
+//   and (orientation: landscape)
